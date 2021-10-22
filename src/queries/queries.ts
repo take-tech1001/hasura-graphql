@@ -32,7 +32,7 @@ export const GET_USERIDS = gql`
 `
 
 export const GET_USERBY_ID = gql`
-  query GetUserById($id: uuid) {
+  query GetUserById($id: uuid!) {
     users_by_pk(id: $id) {
       id
       name
@@ -55,7 +55,7 @@ export const CREATE_USER = gql`
 `
 
 export const UPDATE_USER = gql`
-  mutation UpdateUser($id: uuid, $name: String!) {
+  mutation UpdateUser($id: uuid!, $name: String!) {
     update_users_by_pk(pk_columns: {id: $id}, _set: {name: $name}) {
       id
       name
@@ -65,7 +65,7 @@ export const UPDATE_USER = gql`
 `
 
 export const DELETE_USER = gql`
-  mutation DeleteUser($id: uuid) {
+  mutation DeleteUser($id: uuid!) {
     delete_users_by_pk(id: $id) {
       id
       name
