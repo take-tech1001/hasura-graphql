@@ -1,11 +1,10 @@
 import type { VFC } from 'react'
 
-import { useState } from 'react'
 import { todoVar } from '../../cache'
 import { useReactiveVar } from '@apollo/client'
 import Link from 'next/link'
 
-const LocalStateB: VFC = () => {
+export const LocalStateB: VFC = () => {
   const todos = useReactiveVar(todoVar)
   return (
     <>
