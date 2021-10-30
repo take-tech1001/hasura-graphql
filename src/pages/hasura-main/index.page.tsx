@@ -7,7 +7,16 @@ import { GET_USERS } from '../../queries/queries'
 import { Layout } from '../layout/Layout'
 
 const FetchMain: VFC = () => {
-  const { data, error } = useQuery<GetUsersQuery>(GET_USERS)
+  const { data, error } = useQuery<GetUsersQuery>(GET_USERS, {
+    // 毎回graphqlサーバーから最新の状態のデータを取得する
+    // fetchPolicy: 'network-only',
+    // graphqlサーバーから最新の状態のデータを取得している間キャッシュのデータを表示する
+    fetchPolicy: 'cache-and-network',
+    // 毎回キャッシュを見に行く
+    // fetchPolicy: 'cache-first',
+    // 毎回graphqlサーバーを見に行き、キャッシュを生成しない
+    // fetchPolicy: 'no-cache',
+  })
   if (error) {
     return (
       <Layout title="Hasura FetchPolicy">
