@@ -11,8 +11,8 @@
     "gen-types": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
-    "@apollo/client": "^3.4.16",
-    "@apollo/react-hooks": "^4.0.0",
+    "@apollo/client": "3.4.16",
+    "@apollo/react-hooks": "4.0.0",
     "@heroicons/react": "1.0.5",
     "autoprefixer": "^10.3.7",
     "cross-fetch": "^3.1.4",
