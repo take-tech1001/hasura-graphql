@@ -7495,7 +7495,7 @@ valid-url@1.0.9, valid-url@^1.0.9:
   resolved "https://registry.yarnpkg.com/valid-url/-/valid-url-1.0.9.tgz#1c14479b40f1397a75782f115e4086447433a200"
   integrity sha1-HBRHm0DxOXp1eC8RXkCGRHQzogA=
 
-valtio@^1.2.12:
+valtio@1.2.12:
   version "1.2.12"
   resolved "https://registry.yarnpkg.com/valtio/-/valtio-1.2.12.tgz#14f46f6c90b63c6e4176831c68ab9b729fea38ee"
   integrity sha512-TlQkbSma4aAAgs6tQXrvGilMZBVH0q8gbbWxRbo2R43FhkW4lWi45f9jC6gAdJdC40bsNnYyBsYDB9OOKNlqSw==
